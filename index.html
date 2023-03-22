@@ -4,11 +4,88 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  <title>Kazim`s Kitchen</title>
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#menu">Menu</a>
+    <a href="#gallary">Gallary</a>
+    <a href="#reviews">Customer Reviews</a>
+    <a href="#requests">Requests and Reviews</a>
+  </nav>
 
+  <!--Image carousel messages on each image (e.g. Outstanding Food, Delicious, etc)-->
+  <section id="home">
+    <div>
+      <img src="">
+    </div>
+  </section>
+
+  <!--quick summary of the what the restaurant is about with a link to a more detailed page-->
+  <section id="about">
+    <h1>Welcome To Our Restaurant</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem adipisci sint exercitationem nihil in nisi incidunt
+      nostrum facilis esse consequuntur similique suscipit optio voluptatem deleniti nobis velit pariatur, perferendis
+      repudiandae.</p>
+    <input type="button" name="about" value="Read More">
+  </section>
+
+  <!--menu items in divs with img and price. Pops out on click to reveal more details and the ability to add to cart-->
+  <section id="menu">
+    <h2>Our Menu</h2>
+    <div>
+      <img src="">
+      <h3>Delicious Food</h3>
+      <h6>$100.00</h6>
+    </div>
+  </section>
+
+  <!--A selection of customer and professional pictures of the food items being offers-->
+  <section id="gallary">
+    <h2>Our Gallary</h2>
+    <img src="">
+    <img src="">
+    <img src="">
+    <img src="">
+  </section>
+
+  <!--small blocks with customer reviews which will be updated over time-->
+  <section id="reviews">
+
+  </section>
+
+  <!--form for customers to submit requests or reviews-->
+  <section id="requests">
+    <form action="" method="post">
+      First Name: <input type="text" name="firstname" id="firstname"><br>
+      Last Name: <input type="text" name="lasttname" id="lasttname"><br>
+      Email: <input type="email" name="email" id="email"><br>
+      Phone Number: <input type="number" name="contact" id="contact">
+      <select name="submit_type" id="submit_type">
+        <option value="review">Review</option>
+        <option value="request">Request</option>
+      </select>
+
+      <div>
+        <select name="location" id="location">
+          <option value="roundabout">Round-a-bout</option>
+          <option value="popup">Pop Up Shop</option>
+        </select>
+        Day visited: <input type="datetime" name="day_visited" id="day_visited">
+        Food Quality<br>
+        <input type="radio" name="food_quality" value="excellent">Excellent<br>
+        <input type="radio" name="food_quality" value="good">Good<br>
+        <input type="radio" name="food_quality" value="Average">Average<br>
+        <input type="radio" name="food_quality" value="Dissatisfied">Dissatisfied<br>
+        Overall Service Quality<br>
+        <input type="radio" name="service_quality" id="">
+      </div>
+    </form>
+  </section>
 </body>
 
 </html>
