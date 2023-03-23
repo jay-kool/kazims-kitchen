@@ -1,0 +1,10 @@
+body{
+    background-image: url();
+}
+
+
+li{
+    list-style-type: none;
+    display: inline-block;
+    justify-content: space-around;
+}
