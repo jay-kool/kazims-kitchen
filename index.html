@@ -15,14 +15,16 @@
     <a href="#menu">Menu</a>
     <a href="#gallary">Gallary</a>
     <a href="#reviews">Customer Reviews</a>
-    <a href="#requests">Requests and Reviews</a>
+    <a href="#feedback">RSubmit Feedback</a>
   </nav>
+  <hr>
   <!--Image carousel messages on each image (e.g. Outstanding Food, Delicious, etc)-->
   <section id="home">
     <div>
       <img src="">
     </div>
   </section>
+  <hr>
   <!--quick summary of the what the restaurant is about with a link to a more detailed page-->
   <section id="about">
     <h1>Welcome To Our Restaurant</h1>
@@ -31,6 +33,7 @@
       repudiandae.</p>
     <input type="button" name="about" value="Read More">
   </section>
+  <hr>
   <!--menu items in divs with img and price. Pops out on click to reveal more details and the ability to add to cart-->
   <section id="menu">
     <h2>Our Menu</h2>
@@ -40,6 +43,7 @@
       <h6>$100.00</h6>
     </div>
   </section>
+  <hr>
   <!--A selection of customer and professional pictures of the food items being offers-->
   <section id="gallary">
     <h2>Our Gallary</h2>
@@ -48,41 +52,65 @@
     <img src="">
     <img src="">
   </section>
+  <hr>
   <!--small blocks with customer reviews which will be updated over time-->
   <section id="reviews">
+    <h2>Customer Review</h2>
   </section>
+  <hr>
   <!--form for customers to submit requests or reviews-->
-  <section id="requests">
+  <section id="feedback">
+    <h2>Service Quality Feedback</h2>
     <form action="" method="post">
-      First Name: <input type="text" name="firstname" id="firstname"><br>
-      Last Name: <input type="text" name="lasttname" id="lasttname"><br>
-      Email: <input type="email" name="email" id="email"><br>
-      Phone Number: <input type="number" name="contact" id="contact">
-      <select name="submit_type" id="submit_type">
-        <option value="review">Review</option>
-        <option value="request">Request</option>
-      </select>
-      <div>
-        <select name="location" id="location">
+      
+
+        First Name: <input type="text" name="firstname" id="firstname"><br>
+        Last Name: <input type="text" name="lasttname" id="lasttname"><br>
+        Email: <input type="email" name="email" id="email"><br>
+        Phone Number: <input type="tel" name="contact" id="contact"><br>
+        Location you visited: <select name="location" id="location">
           <option value="roundabout">Round-a-bout</option>
           <option value="popup">Pop Up Shop</option>
-        </select>
-        Day visited: <input type="datetime" name="day_visited" id="day_visited">
+        </select><br>
+        Day visited: <input type="date" name="day_visited" id="day_visited"><br>
         Food Quality<br>
-        <input type="radio" name="food_quality" value="excellent">Excellent<br>
-        <input type="radio" name="food_quality" value="good">Good<br>
-        <input type="radio" name="food_quality" value="Average">Average<br>
+        <input type="radio" name="food_quality" value="excellent">Excellent
+        <input type="radio" name="food_quality" value="good">Good
+        <input type="radio" name="food_quality" value="Average">Average
         <input type="radio" name="food_quality" value="Dissatisfied">Dissatisfied<br>
         Overall Service Quality<br>
-        <input type="radio" name="service_quality" id="">
-        Cleanliness
-        Order Accuracy
-        Speed of Service
-        Overall Experience
-        Any comments, questions or suggestions?
-      </div>
+        <input type="radio" name="service_quality" value="excellent">Excellent
+        <input type="radio" name="service_quality" value="good">Good
+        <input type="radio" name="service_quality" value="Average">Average
+        <input type="radio" name="service_quality" value="Dissatisfied">Dissatisfied<br>
+        Cleanliness<br>
+        <input type="radio" name="cleanliness" value="excellent">Excellent
+        <input type="radio" name="cleanliness" value="good">Good
+        <input type="radio" name="cleanliness" value="Average">Average
+        <input type="radio" name="cleanliness" value="Dissatisfied">Dissatisfied<br>
+        Order Accuracy<br>
+        <input type="radio" name="order_accuracy" value="excellent">Excellent
+        <input type="radio" name="order_accuracy" value="good">Good
+        <input type="radio" name="order_accuracy" value="Average">Average
+        <input type="radio" name="order_accuracy" value="Dissatisfied">Dissatisfied<br>
+        Speed of Service<br>
+        <input type="radio" name="service_speed" value="excellent">Excellent
+        <input type="radio" name="service_speed" value="good">Good
+        <input type="radio" name="service_speed" value="Average">Average
+        <input type="radio" name="service_speed" value="Dissatisfied">Dissatisfied<br>
+        Overall Experience<br>
+        <input type="radio" name="service_exp" value="excellent">Excellent
+        <input type="radio" name="service_exp" value="good">Good
+        <input type="radio" name="service_exp" value="Average">Average
+        <input type="radio" name="service_exp" value="Dissatisfied">Dissatisfied<br>
+        Any comments, questions or suggestions?<br>
+        <textarea name="comments" id="" cols="30" rows="10"></textarea><br>
+
+      <input type="submit" value="SUBMIT">
     </form>
   </section>
+  <hr>
+
 </body>
 
 </html>
