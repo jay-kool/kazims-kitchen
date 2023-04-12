@@ -1,10 +1,53 @@
-body{
-    background-image: url();
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'segoe ui';
+    font-weight: bold;
+}
+hr{
+    margin: 0;
+    padding: 0;
+}
+
+/* Define the Navigation block */
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100vw;
+    height: 5rem;
+    background-color: rgb(68, 196, 153);
+    border: 1px solid black;
+}
+
+nav ul {
+    display: flex;
+    flex: 1 1 1rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+
+nav li a {
+    text-decoration: none;
 }
 
 
-li{
-    list-style-type: none;
-    display: inline-block;
-    justify-content: space-around;
+#gallary #img_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.gallary_img {
+    width: 455px;
+    height: auto;
+    transition: all 1s;
+    margin: 10px 0px;
+}
+
+.gallary_img:hover {
+    transform: scale(1.1);
 }
