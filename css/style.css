@@ -1,28 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
-
-
-body {
+* {
     margin: 0;
     padding: 0;
-    font-family: ope;
-    font-weight: bold;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-hr {
-    margin: 0;
-    padding: 0;
+:root{
+    --bg-color: #222327;
+    --text-color: #f0f8ff;
+    --main-color: #29fd53;
 }
 
-/* Define the Navigation block */
-nav {
+
+/*Navigation styling start*/
+
+/*
+#home,
+#about,
+#menu,
+#gallary,
+#feedback,
+#reviews {
+    padding-top: 65px;
+}
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+#logo {
+    font-size: 2.2em;
+}
+
+#navbar {
     display: flex;
     flex-direction: row;
     align-items: center;
     width: 100vw;
-    height: 5rem;
-    background-color: rgb(68, 196, 153);
-    border: 1px solid black;
+    height: 60px;
+    background-image: linear-gradient(rgba(68, 196, 153, 1), rgba(255, 255, 255, 0.2));
+    padding: 0px 20px;
 }
+
+
 
 nav ul {
     display: flex;
@@ -33,10 +55,24 @@ nav ul {
     list-style: none;
 }
 
-nav li a {
+.nav_item {
     text-decoration: none;
+    color: aliceblue;
+    font-size: 1.2em;
+    transition: all 0.6s;
 }
 
+.nav_item:hover {
+    background-image: linear-gradient(rgba(40, 152, 204, 0.7), rgba(255, 255, 255, 0));
+    padding: 5px 20px 20px;
+    border-radius: 5%;
+    font-size: 1.5em;
+}
+*/
+/*Navigation styling end*/
+
+
+/*Gallary styling start*/
 
 #gallary #img_container {
     display: flex;
@@ -55,3 +91,5 @@ nav li a {
 .gallary_img:hover {
     transform: scale(1.1);
 }
+
+/*Gallary styling end*/
