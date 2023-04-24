@@ -48,15 +48,11 @@ header {
     align-items: center;
 }
 
-.nav_logo i {
-    color: var(--main-color);
-    font-size: 28px;
-    margin-right: 3px;
-}
-
-.nav_logo span {
+.nav_logo a {
     font-size: 1.7rem;
     font-weight: 600;
+    text-decoration: none;
+    color: var(--text-color);
 }
 
 .navbar {
@@ -78,12 +74,12 @@ header {
     color: var(--main-color);
 }
 
-.btn_menu {
+#btn_menu {
     display: flex;
     align-items: center;
 }
 
-.btn_menu a {
+#btn_menu a {
     margin-right: 30px;
     margin-left: 10px;
     color: var(--text-color);
@@ -128,7 +124,7 @@ header {
     top: -13px;
 }
 
-.btn_menu a:hover {
+#btn_menu a:hover {
     color: var(--main-color);
 }
 
@@ -183,6 +179,17 @@ header {
 
     .open {
         right: 2%;
+    }
+}
+
+@media(max-width:500px) {
+    header{
+        display: grid;
+        justify-content: space-evenly;
+        transition: all .50s ease;
+    }
+    .nav_logo{
+        justify-content: center;
     }
 }
 
@@ -277,7 +284,7 @@ header {
 }
 
 .gallary_img {
-    width: 455px;
+    width: 100px;
     height: auto;
     transition: all 1s;
     margin: 10px 0px;
